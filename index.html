@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit Finland - Experience the Magic of the North</title>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Header -->
+      <header id="main-header">
+        <div class="container">
+          <div class="logo">
+            <img src="/src/assets/logo.svg" alt="Visit Finland" id="logo-img" />
+          </div>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="#destinations">Destinations</a></li>
+              <li><a href="#activities">Activities</a></li>
+              <li><a href="#seasons">Best Time to Visit</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#travel-info">Travel Info</a></li>
+            </ul>
+            <button id="mobile-menu-btn" aria-label="Menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </nav>
+          <button id="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section id="hero">
+        <div class="hero-content">
+          <h1 class="fade-in">Discover the Magic of Finland</h1>
+          <p class="fade-in">Land of a thousand lakes, northern lights, and endless summer days</p>
+          <button class="cta-button fade-in">Plan Your Trip</button>
+        </div>
+      </section>
+
+      <!-- Destinations Section -->
+      <section id="destinations" class="section">
+        <div class="container">
+          <h2 class="section-title">Popular Destinations</h2>
+          <div class="destinations-grid" id="destinations-container">
+            <!-- Destinations will be loaded from JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Activities Section -->
+      <section id="activities" class="section">
+        <div class="container">
+          <h2 class="section-title">Experiences & Activities</h2>
+          <div class="activities-grid">
+            <div class="activity-card" data-animation="fade-in">
+              <div class="activity-icon northern-lights"></div>
+              <h3>Northern Lights</h3>
+              <p>Witness the spectacular aurora borealis dancing across the Arctic sky from September to March.</p>
+            </div>
+            <div class="activity-card" data-animation="fade-in">
+              <div class="activity-icon sauna"></div>
+              <h3>Finnish Sauna</h3>
+              <p>Experience the authentic Finnish sauna culture - an essential part of Finnish identity.</p>
+            </div>
+            <div class="activity-card" data-animation="fade-in">
+              <div class="activity-icon husky"></div>
+              <h3>Husky Safaris</h3>
+              <p>Glide through snow-covered forests on a traditional dog sled in Lapland.</p>
+            </div>
+            <div class="activity-card" data-animation="fade-in">
+              <div class="activity-icon hiking"></div>
+              <h3>Nature Hiking</h3>
+              <p>Explore Finland's pristine national parks and witness the untouched wilderness.</p>
+            </div>
+            <div class="activity-card" data-animation="fade-in">
+              <div class="activity-icon fishing"></div>
+              <h3>Lake Fishing</h3>
+              <p>Try your hand at fishing in some of Finland's 188,000 lakes teeming with diverse species.</p>
+            </div>
+            <div class="activity-card" data-animation="fade-in">
+              <div class="activity-icon midsummer"></div>
+              <h3>Midsummer Festival</h3>
+              <p>Join the celebration of the midnight sun during the magical Finnish midsummer.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seasons Section -->
+      <section id="seasons" class="section">
+        <div class="container">
+          <h2 class="section-title">Best Time to Visit</h2>
+          <div class="seasons-container">
+            <div class="season-tabs">
+              <button class="season-tab active" data-season="winter">Winter</button>
+              <button class="season-tab" data-season="spring">Spring</button>
+              <button class="season-tab" data-season="summer">Summer</button>
+              <button class="season-tab" data-season="autumn">Autumn</button>
+            </div>
+            <div class="season-content">
+              <div class="season-panel active" id="winter-panel">
+                <div class="season-image" style="background-image: url('https://images.pexels.com/photos/940858/pexels-photo-940858.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')"></div>
+                <div class="season-info">
+                  <h3>Winter Wonderland</h3>
+                  <p class="season-date">December - March</p>
+                  <p>Experience the magic of Finnish winter with snow-covered landscapes, northern lights, and winter activities. Temperatures range from -5°C to -30°C.</p>
+                  <ul class="season-highlights">
+                    <li>Aurora Borealis viewing</li>
+                    <li>Husky and reindeer safaris</li>
+                    <li>Ice fishing and skating</li>
+                    <li>Santa Claus Village in Rovaniemi</li>
+                    <li>Ski resorts in Lapland</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="season-panel" id="spring-panel">
+                <div class="season-image" style="background-image: url('https://images.pexels.com/photos/2832078/pexels-photo-2832078.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')"></div>
+                <div class="season-info">
+                  <h3>Spring Revival</h3>
+                  <p class="season-date">April - May</p>
+                  <p>Witness nature waking up with melting snow, flowing rapids, and migrating birds. Temperatures vary from 0°C to 15°C.</p>
+                  <ul class="season-highlights">
+                    <li>Witnessing the awakening of nature</li>
+                    <li>Longer daylight hours</li>
+                    <li>Hiking and birdwatching</li>
+                    <li>Spring festivals</li>
+                    <li>Fewer tourists and better prices</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="season-panel" id="summer-panel">
+                <div class="season-image" style="background-image: url('https://images.pexels.com/photos/147411/pexels-photo-147411.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')"></div>
+                <div class="season-info">
+                  <h3>Midnight Sun</h3>
+                  <p class="season-date">June - August</p>
+                  <p>Experience the magical midnight sun with endless daylight. Warm temperatures between 15°C to 25°C make this the most popular season.</p>
+                  <ul class="season-highlights">
+                    <li>Midnight sun phenomenon</li>
+                    <li>Swimming in lakes and the Baltic Sea</li>
+                    <li>Cottage life and sauna experiences</li>
+                    <li>Midsummer celebration (Juhannus)</li>
+                    <li>Vibrant cities and outdoor cafés</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="season-panel" id="autumn-panel">
+                <div class="season-image" style="background-image: url('https://images.pexels.com/photos/1632790/pexels-photo-1632790.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')"></div>
+                <div class="season-info">
+                  <h3>Autumn Colors</h3>
+                  <p class="season-date">September - November</p>
+                  <p>Witness "ruska" - the spectacular autumn foliage. Temperatures cool from 15°C to near freezing with potential early snow.</p>
+                  <ul class="season-highlights">
+                    <li>Spectacular autumn colors (ruska)</li>
+                    <li>Mushroom and berry picking</li>
+                    <li>Early northern lights</li>
+                    <li>Peaceful hiking trails</li>
+                    <li>Cozy cafés and cultural events</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="section">
+        <div class="container">
+          <h2 class="section-title">Finland Gallery</h2>
+          <div class="gallery-container" id="gallery-container">
+            <!-- Gallery will be loaded from JS -->
+          </div>
+        </div>
+      </section>
+      
+      <!-- Travel Info Section -->
+      <section id="travel-info" class="section">
+        <div class="container">
+          <h2 class="section-title">Travel Information</h2>
+          <div class="travel-info-grid">
+            <div class="info-card" data-animation="fade-in">
+              <h3>Getting There</h3>
+              <p>Finland is well-connected with international flights to Helsinki-Vantaa Airport. From there, domestic flights, trains, and buses connect to major cities. EU citizens can enter with just an ID card.</p>
+            </div>
+            <div class="info-card" data-animation="fade-in">
+              <h3>Getting Around</h3>
+              <p>Finland has an excellent transportation system with trains, buses, and domestic flights. In cities, public transport is efficient. Renting a car is recommended for exploring remote areas.</p>
+            </div>
+            <div class="info-card" data-animation="fade-in">
+              <h3>Language</h3>
+              <p>Finnish and Swedish are the official languages, but English is widely spoken, especially in tourist areas, hotels, and restaurants.</p>
+            </div>
+            <div class="info-card" data-animation="fade-in">
+              <h3>Currency</h3>
+              <p>The currency is Euro (€). Credit cards are widely accepted, even for small purchases. ATMs are readily available in cities and towns.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section id="newsletter" class="section">
+        <div class="container">
+          <div class="newsletter-container">
+            <div class="newsletter-content">
+              <h2>Stay Updated</h2>
+              <p>Subscribe to our newsletter for the latest travel tips, seasonal events, and exclusive offers.</p>
+              <form id="newsletter-form">
+                <div class="form-group">
+                  <input type="email" id="email" placeholder="Your email address" required>
+                  <button type="submit" class="subscribe-btn">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <img src="/src/assets/logo.svg" alt="Visit Finland" />
+              <p>Discover the Magic of the North</p>
+            </div>
+            <div class="footer-links">
+              <div class="footer-column">
+                <h4>Explore</h4>
+                <ul>
+                  <li><a href="#destinations">Destinations</a></li>
+                  <li><a href="#activities">Activities</a></li>
+                  <li><a href="#seasons">Seasons</a></li>
+                  <li><a href="#gallery">Gallery</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4>Information</h4>
+                <ul>
+                  <li><a href="#">About Finland</a></li>
+                  <li><a href="#">Travel Tips</a></li>
+                  <li><a href="#">Safety</a></li>
+                  <li><a href="#">FAQs</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4>Contact</h4>
+                <ul>
+                  <li><a href="mailto:info@visitfinland.com">Email Us</a></li>
+                  <li><a href="#">Tourist Offices</a></li>
+                  <li><a href="#">Partnership</a></li>
+                  <li><a href="#">Press</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="social-media">
+              <a href="#" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 4c0 0-7 2-12 8c0 0 0 4 2 6c0 0-2 0-6-3c0 0 0 2 4 5c0 0-2 1-5 0c0 0 2 3 6 3c0 0-4 3-10 2c0 0 6 4 14 1c8-3 8-11 8-11"/>
+                </svg>
+              </a>
+              <a href="#" aria-label="YouTube">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>&copy; 2025 Visit Finland. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

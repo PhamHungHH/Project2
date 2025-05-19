@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" viewBox="0 0 200 40" fill="none">
+  <path d="M10 8H22V14H10V8Z" fill="#0066CC"/>
+  <path d="M10 16H22V22H10V16Z" fill="#0066CC"/>
+  <path d="M10 24H22V30H10V24Z" fill="#0066CC"/>
+  <text x="30" y="25" font-family="Poppins, sans-serif" font-weight="600" font-size="18" fill="#0066CC">VISIT FINLAND</text>
+</svg>

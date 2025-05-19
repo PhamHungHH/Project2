@@ -12,19 +12,19 @@ const destinations: Destination[] = [
     id: 'helsinki',
     name: 'Helsinki',
     description: 'Finland\'s cosmopolitan capital with a vibrant design scene, stunning architecture, and beautiful harbor area.',
-    image: 'https://images.pexels.com/photos/1509582/pexels-photo-1509582.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+    image: 'https://images.pexels.com/photos/1538177/pexels-photo-1538177.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
   },
   {
     id: 'lapland',
     name: 'Lapland',
     description: 'The magical northern region with reindeer, northern lights, and the home of Santa Claus in Rovaniemi.',
-    image: 'https://images.pexels.com/photos/731082/pexels-photo-731082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+    image: 'https://images.pexels.com/photos/1561020/pexels-photo-1561020.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
   },
   {
     id: 'lakeland',
     name: 'Finnish Lakeland',
     description: 'Home to thousands of serene lakes, perfect for boating, fishing, and experiencing Finnish cottage life.',
-    image: 'https://images.pexels.com/photos/2132180/pexels-photo-2132180.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+    image: 'https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
   },
   {
     id: 'archipelago',

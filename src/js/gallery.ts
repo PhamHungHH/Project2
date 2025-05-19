@@ -10,7 +10,7 @@ interface GalleryItem {
 const galleryItems: GalleryItem[] = [
   {
     id: 1,
-    image: 'https://images.pexels.com/photos/2724079/pexels-photo-2724079.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    image: 'https://images.pexels.com/photos/1933239/pexels-photo-1933239.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     caption: 'Aurora Borealis over Lapland',
     alt: 'Northern Lights in Finnish Lapland'
   },
@@ -22,7 +22,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: 3,
-    image: 'https://images.pexels.com/photos/147411/pexels-photo-147411.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    image: 'https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     caption: 'Summer Lake View',
     alt: 'Beautiful Finnish lake in summer'
   },
@@ -34,7 +34,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: 5,
-    image: 'https://images.pexels.com/photos/1030332/pexels-photo-1030332.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    image: 'https://images.pexels.com/photos/2422461/pexels-photo-2422461.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     caption: 'Helsinki Cathedral',
     alt: 'Famous white Helsinki Cathedral'
   },
@@ -46,13 +46,13 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: 7,
-    image: 'https://images.pexels.com/photos/1128782/pexels-photo-1128782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    image: 'https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     caption: 'Traditional Finnish Sauna',
     alt: 'Traditional wooden sauna by the lake'
   },
   {
     id: 8,
-    image: 'https://images.pexels.com/photos/939720/pexels-photo-939720.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    image: 'https://images.pexels.com/photos/3715436/pexels-photo-3715436.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     caption: 'Husky Sled in Lapland',
     alt: 'Husky dog sled in snowy Lapland'
   }

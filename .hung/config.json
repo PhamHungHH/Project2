@@ -1,0 +1,8 @@
+{
+  "name": "finland-tourist-website",
+  "type": "web",
+  "build": {
+    "command": "npm run build",
+    "output": "dist"
+  }
+}
